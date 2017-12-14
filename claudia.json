@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "busmeherenow-executor",
+    "name": "busmeherenow",
+    "region": "us-east-1"
+  },
+  "api": {
+    "id": "fus6vo8y0k",
+    "module": "app"
+  }
+}

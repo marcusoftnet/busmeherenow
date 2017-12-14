@@ -1,0 +1,27 @@
+{
+  "name": "busmeherenow",
+  "version": "1.0.0",
+  "description": "Shows buses that leaves within 5 minutes, 500 meters from me",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "build:create" : "claudia create --region us-east-1 --api-module app",
+    "build:deploy" : "claudia update",
+    "build" : "npm run lint:fix && npm run build:deploy"
+   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcusoftnet/busmeherenow.git"
+  },
+  "keywords": [],
+  "author": "Marcus Hammarberg <marcusoftnet@gmail.com> (http://www.marcusoft.net)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcusoftnet/busmeherenow/issues"
+  },
+  "homepage": "https://github.com/marcusoftnet/busmeherenow#readme",
+  "dependencies": {
+    "claudia-api-builder": "^2.5.1"
+  }
+}
