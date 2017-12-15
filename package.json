@@ -6,10 +6,10 @@
   "scripts": {
     "lint": "standard",
     "lint:fix": "standard --fix",
-    "build:create" : "claudia create --region us-east-1 --api-module app",
-    "build:deploy" : "claudia update",
-    "build" : "npm run lint:fix && npm run build:deploy"
-   },
+    "build:create": "claudia create --region us-east-1 --api-module app",
+    "build:deploy": "claudia update",
+    "build": "npm run lint:fix && npm run build:deploy"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/marcusoftnet/busmeherenow.git"
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/marcusoftnet/busmeherenow#readme",
   "dependencies": {
-    "claudia-api-builder": "^2.5.1"
+    "claudia-api-builder": "^2.5.1",
+    "node-fetch": "^1.7.3"
   }
 }
