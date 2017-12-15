@@ -7,7 +7,8 @@
     "lint": "standard",
     "lint:fix": "standard --fix",
     "build:create": "claudia create --region us-east-1 --api-module app",
-    "build:deploy": "claudia update",
+    "build:deploy": "claudia update --version development",
+    "release" : "claudia update --version production",
     "build": "npm run lint:fix && npm run build:deploy"
   },
   "repository": {
